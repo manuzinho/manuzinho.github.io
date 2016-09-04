@@ -1,0 +1,432 @@
+body
+{
+    background: #309AE6;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: rgba(5,5,5,0.9);
+}
+
+h2
+{
+    text-decoration: underline;
+}
+#bloc_page
+{
+    width: 900px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    /*font-family: Dayrom, serif;*/
+    font-weight: normal;
+    /*text-transform: uppercase;*/
+}
+
+/* Header */
+
+header
+{
+    background: url('separateur.png') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 59px;
+    height: 60px;
+}
+
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2 /*Inutile*/
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Navigation */
+
+nav ul /* Sinon ça serait écrit en colonnes*/
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-left: -25px;
+    margin-right: 50px;
+}
+
+nav img
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    filter: invert(0);
+    -webkit-filter: brightness(75%);
+    -moz-filter: brightness(75%);
+    -o-filter: brightness(75%);
+    -ms-filter: brightness(75%);
+    transition: all 0.1s ease-in;
+}
+
+nav img:hover
+{
+    filter: invert(1);
+    -webkit-filter: brightness(100%);
+    -moz-filter: brightness(100%);
+    -o-filter: brightness(100%);
+    -ms-filter: brightness(100%); 
+}
+
+/* Bannière */
+
+#banniere_image
+{
+    margin-top: 25px;
+    height: 200px;
+    background: url('amsud/Ushuaia/banniereush.jpg') ;
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+#banniere_image2
+{
+    margin-top: 15px;
+    height: 200px;
+    background: url('amsud/TorresdelPaine/bannieretor.jpg') ;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+#banniere_image3
+{
+    margin-top: 15px;
+    height: 200px;
+    background: url('amsud/Ush_Tor/bannierefer.jpg') ;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+#banniere_image4
+{
+    margin-top: 15px;
+    height: 200px;
+    background: url('amsud/PeritoMoreno/banniereper.jpg') ;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+#banniere_image5
+{
+    margin-top: 15px;
+    height: 200px;
+    background: url('amsud/ElChalten/banniereelc.jpg') ;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+#banniere_corcovado
+{
+    margin-top: 15px;
+    height: 200px;
+    background: url('rio/corcovado/corcovado2.png') ;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+#banniere_cabritos
+{
+    margin-top: 15px;
+    height: 200px;
+    background: url('rio/cabritos/cabritos.jpg') ;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+#banniere_iguazu
+{
+    margin-top: 15px;
+    height: 200px;
+    background: url('bresil/iguazu/iguazu.jpg') ;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+#banniere_aves
+{
+    margin-top: 15px;
+    height: 200px;
+    background: url('bresil/aves/aves.jpg') ;
+    position: relative;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 15px 0px 10px 10px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.5);
+    color: white;
+    font-size: 0.8em;
+}
+
+/* Corps */
+
+section
+{
+    display: flex;
+    margin-bottom: 15px;
+
+}
+
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+    flex: 3;
+    background-color : white;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 0px;
+    color: black;
+    box-shadow: 0px 2px 5px #1c1a19;
+}
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.8em;
+}
+
+aside, footer
+{
+    flex: 1.2;
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 0px;
+    color: black;
+    font-size: 0.9em;
+}
+
+#aside2
+{
+    flex: 0.5;
+    position: relative;
+    background-color: blue;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 15px;
+    color: white;
+    font-size: 0.9em;
+}
+#aside3
+{
+    flex: 3.3;
+    position: relative;
+    background-color: #49DE7D;
+    box-shadow: 0px 2px 5px white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 15px;
+    color: white;
+    font-size: 0.9em;
+}
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+#aside3 img
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+aside img
+{
+    margin-right: 10px;
+}
+
+/* Footer */
+
+footer
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+}
+div
+{
+    margin-top: 20px
+}
+.dernierart
+{
+    font-size: 20px;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+table
+{
+    border-collapse: collapse;
+}
+td, th
+{
+    border: 2px solid black; /* auront une bordure de 1px */
+}
+
+#debut
+{
+    margin-bottom: 20px;
+    background-color : white;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    box-shadow: 0px 2px 5px #1c1a19;
+}
+
+#cff {
+    position:relative;
+    right: 0px;
+    bottom: 0px
+    border: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#cf {
+    position:relative;
+    border: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+#cf img {
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+ 
+    filter: invert(0);
+    -webkit-filter: invert(0);
+    -moz-filter: invert(0);
+    -o-filter: invert(0);
+    -ms-filter: invert(0);
+    transition: all 0.1s ease-in;
+}
+
+#cf img.top:hover 
+{
+        filter: invert(1);
+        -webkit-filter: invert(1);
+        -moz-filter: invert(1);
+        -o-filter: invert(1);
+        -ms-filter: invert(1);        
+}
+.bouton_blanc 
+{
+
+    background-color : white;
+    border: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: black;
+    box-shadow: 0px 2px 5px #1c1a19;
+}
+.bouton_bleu
+{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 8.2px;
+    background: url('degradebleu.png');
+    border-radius: 11px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+#boutonbleu 
+{
+    filter: invert(0);
+    -webkit-filter: invert(0);
+    -moz-filter: invert(0);
+    -o-filter: invert(0);
+    -ms-filter: invert(0);
+    transition: all 0.1s ease-in;
+}
+#boutonbleu .top:hover 
+{
+        filter: invert(1);
+        -webkit-filter: invert(1);
+        -moz-filter: invert(1);
+        -o-filter: invert(1);
+        -ms-filter: invert(1);        
+}

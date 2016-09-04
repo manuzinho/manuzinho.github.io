@@ -1,0 +1,50 @@
+p 
+{
+	color: blue;
+	font-size: 0.95em;
+	border: 3px black inset;
+	border-radius: 7px;
+	box-shadow: 6px 6px 2px dark;
+	text-shadow: 1px 1px dark;
+	width: 65%;
+	min-width: 400px;
+	padding: 8px	;
+	margin: 10px;
+}
+.puenat
+{
+	color: green;
+}
+p em
+{
+	color: rgba(160,60,30,0.7);
+	text-decoration: underline;
+	text-align: left;
+}
+p em:active
+{
+	background-color: dark;
+}
+.imageflottante
+{
+    float: right;
+}
+
+body
+{
+	background: url("fond.jpg"), url("tn_maracuja.jpg") fixed no-repeat top right;
+
+}
+
+#menu
+{
+	display:flex;
+	flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+.element:nth-child(2) /* On prend le deuxième bloc élément */
+{
+	/*align-self: flex-end; /* Seul ce bloc sera aligné à la fin */
+}
